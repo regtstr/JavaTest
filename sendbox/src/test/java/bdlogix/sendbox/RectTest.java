@@ -3,11 +3,10 @@ package bdlogix.sendbox;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SquareTests {
-
+public class RectTest {
     @Test
     public void testArea() {
-        Square s = new Square(5);
-        Assert.assertEquals(s.area(),25 );
+        Rectangle r = new Rectangle(5, 7);
+        Assert.assertEquals(r.area(), 35.0);
     }
 }
