@@ -5,21 +5,16 @@ public class JavaTest {
 	public static void main(String[] args) {
 		hello("world!");
 
-		double l = 8;
-		System.out.println("Площадь квадрата со стороной " + l + " = " + area(l));
+		Square s = new Square(6);
+		System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-		double a =6;
-		double b = 8;
-		System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a, b));
+		Rectangle r = new Rectangle(6, 8);
+		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 ;		}
 
 		public static void hello(String w) {
 					System.out.println("Hellow, " + w);
 		}
-		public static double area (double l) {
-		return l * l;
-		}
-		public static  double area(double a, double b) {
-		return a * b;
-		}
+
+
 }
